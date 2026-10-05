@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #493e45;
+  background: #fff9fa;
+  font-synthesis: none;
+  --rose: #b66f80;
+  --rose-dark: #875062;
+  --pink: #f7dfe4;
+  --cream: #fff9f5;
+  --ink: #493e45;
+  --muted: #7f7178;
+  --line: #eadde0;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #fff9fa; }
+button, a { font: inherit; }
+button { cursor: pointer; }
+.decor { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 3; }
+.float { position: absolute; color: #c98a9a; font-size: 1.3rem; }
+.f0{left:7%;top:18%}.f1{right:10%;top:23%}.f2{left:16%;bottom:20%}.f3{right:16%;bottom:25%}.f4{left:45%;top:9%}.f5{right:38%;bottom:8%}.f6{left:83%;top:55%}.f7{left:4%;top:72%}
+
+.cover {
+  min-height: 100svh; display:flex; align-items:center; justify-content:center; text-align:center;
+  padding: 32px; position:relative; overflow:hidden;
+  background: radial-gradient(circle at 50% 38%, #fff 0, #fff7f8 45%, #f8e9ed 100%);
+}
+.moon-orb { width:120px;height:120px;border-radius:50%;display:grid;place-items:center;margin:0 auto 30px;
+  background:linear-gradient(145deg,#fff,#f3d8df);box-shadow:0 20px 70px #d9aebc66; color:var(--rose);font-size:2.5rem; }
+.mini,.eyebrow { text-transform:uppercase; letter-spacing:.16em; font-size:.72rem; color:var(--rose-dark); font-weight:700; }
+.cover h1,.hero h1 { font-family:"Playfair Display",serif; font-size:clamp(3rem,8vw,6rem); line-height:.98; margin:14px 0; color:#49343d; }
+.cover h1 span { font-family:inherit; }
+.cover-sub { font-size:1.15rem;color:var(--muted); margin-bottom:30px; }
+.tiny { margin-top:18px;color:#a28f97;font-size:.75rem; }
+.primary { border:0; background:#9e6071;color:#fff;padding:15px 23px;border-radius:999px;box-shadow:0 12px 30px #9e607133;transition:.25s; }
+.primary:hover { transform:translateY(-2px);box-shadow:0 16px 34px #9e607144; }
+.hero { min-height:90svh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:linear-gradient(180deg,#fff8f9,#fff0f3); }
+.hero-glow { position:absolute;width:500px;height:500px;border-radius:50%;background:#f3ccd8;filter:blur(65px);opacity:.35; }
+.hero-inner{position:relative;z-index:1;padding:50px 24px}.cake{font-size:4rem;margin-bottom:20px}.hero h1 em{color:#a96174}.hero-line{font-size:1.08rem;color:var(--muted);max-width:600px;margin:25px auto 35px}.scroll-hint{display:inline-flex;align-items:center;gap:8px;color:#987481;text-decoration:none;font-size:.85rem}
+.paper-section,.wishes-section,.reminder-section,.final-section { padding:100px 22px; }
+.paper-section { background:#fffdfb; }
+.paper { max-width:850px;margin:auto;background:#fff;border:1px solid #eee2e4;border-radius:28px;padding:clamp(30px,6vw,70px);box-shadow:0 30px 80px #7445520d; }
+.section-title{text-align:center;max-width:700px;margin:0 auto 48px}.section-title h2{font:600 clamp(2rem,5vw,3.4rem)/1.1 "Playfair Display",serif;color:#4b3840;margin:12px 0}.section-title p{color:var(--muted);line-height:1.7}
+.letter p{font:400 1rem/1.85 "Playfair Display",serif;color:#5d5056;white-space:pre-line;margin:0 0 22px}.signature{text-align:right;color:#aa7180;font:italic 1rem "Playfair Display",serif;margin-top:35px}
+.wishes-section{background:#fff5f7}.wish-grid{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.wish-card{background:#fff;border:1px solid #eedfe2;border-radius:24px;padding:26px;min-height:235px;transition:.25s}.wish-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px #7445520d}.wish-icon{font-size:2rem}.wish-card h3{font:600 1.35rem "Playfair Display",serif;margin:15px 0 9px}.wish-card p{color:var(--muted);line-height:1.65;font-size:.92rem}.funny{display:block;margin-top:12px;padding:10px 12px;background:#fff2c9;border-radius:12px;font-size:.78rem;color:#776044}
+.reminder-section{background:#fdf9f4}.reminder-card{max-width:760px;margin:auto;text-align:center;border:1px dashed #d8b9c1;border-radius:30px;padding:50px 28px;background:#fffaf5}.alert-icon{font-size:2.5rem;margin-bottom:12px}.reminder-card .section-title{margin-bottom:22px}.reminder-text{max-width:570px;margin:0 auto 25px;line-height:1.8;color:var(--muted)}.soft-button{border:1px solid #d7b4bd;background:#fff;color:#8d5b6b;padding:12px 18px;border-radius:999px}.response{display:flex;align-items:center;justify-content:center;gap:8px;color:#658064;font-weight:600;margin-top:20px}
+.night-section{position:relative;overflow:hidden;min-height:90svh;padding:100px 25px;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 50% 20%,#4a3c58,#211c31 65%,#171522);color:#fdf5f6}.big-moon{position:absolute;right:10%;top:10%;width:120px;height:120px;color:#f7e6d2;fill:#f7e6d2;filter:drop-shadow(0 0 30px #f7e6d266)}.stars{position:absolute;inset:0;color:#fff0d8;display:flex;justify-content:space-around;align-items:flex-start;padding-top:10%;opacity:.7}.night-content{max-width:680px;position:relative;z-index:1}.night-content .eyebrow{color:#e7bdc9}.night-content h2{font:600 clamp(2.5rem,6vw,4.5rem)/1.1 "Playfair Display",serif;margin:15px 0 35px}.night-content p{font:1.05rem/1.8 "Playfair Display",serif;color:#ded3dc}.night-content blockquote{border-left:2px solid #bd8797;margin:35px auto 0;padding:18px 20px;font:italic 1.15rem/1.7 "Playfair Display",serif;color:#f9e9ed}
+.final-section{background:#fff8f8;text-align:center}.final-card{max-width:700px;margin:auto}.mini-cake{font-size:4rem}.final-card h2{font:600 clamp(2rem,5vw,3.3rem) "Playfair Display",serif;color:#49343d}.reveal{margin:35px auto 0;padding:30px;border-radius:25px;background:#fff;border:1px solid #eddfe2;box-shadow:0 20px 50px #74455212}.reveal-heart{font-size:3rem}.reveal h3{font:600 1.8rem "Playfair Display",serif;margin:10px}.reveal p{color:var(--muted)}.reveal small{display:block;color:#9b8189;margin-top:18px}
+footer{padding:28px 20px;text-align:center;background:#f7e8eb;color:#9b6978;font-size:.78rem;display:flex;justify-content:center;align-items:center;gap:7px;flex-wrap:wrap}footer button{border:0;background:transparent;color:#9b6978;margin-left:15px}
+@media(max-width:800px){.wish-grid{grid-template-columns:1fr 1fr}.wish-card{min-height:0}.paper-section,.wishes-section,.reminder-section,.final-section{padding:75px 16px}.big-moon{right:-35px;top:5%;width:90px;height:90px}}
+@media(max-width:520px){.wish-grid{grid-template-columns:1fr}.cover{padding:22px}.cover h1{font-size:3.1rem}.hero h1{font-size:3.6rem}.letter p{font-size:.97rem}.paper{padding:28px 22px}.night-section{padding:85px 22px}.night-content h2{font-size:2.6rem}.stars{padding-top:22%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
